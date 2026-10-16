@@ -461,39 +461,12 @@ imply a continuous trend that is not supported by the data.
     patterns as clinically meaningful.
 -   Obtain suitable time-to-event data if survival analysis is required.
 
-## Repository Structure
 
-``` text
-heart-health-analysis/
-├── README.md
-├── heart-health-analysis.ipynb
-├── requirements.txt
-└── images/
-    └── (optional exported charts)
 ```
 
 The dataset is hosted on Kaggle. If you include a local dataset copy in
 the repository, confirm its license and distribution terms first.
 
-## How to Run
-
-1.  Clone or download this repository.
-2.  Ensure Python and Jupyter are installed.
-3.  Install the dependencies listed in `requirements.txt`.
-4.  Place `heart.csv` in the path expected by the notebook, or update
-    the notebook's data-loading cell.
-5.  Run the notebook from top to bottom.
-
-Example `requirements.txt`:
-
-``` text
-pandas
-numpy
-matplotlib
-seaborn
-scipy
-scikit-learn
-jupyter
 ```
 
 ## Conclusion
