@@ -5,11 +5,6 @@ NumPy, Matplotlib, and Seaborn. This project investigates demographic
 and clinical variables, explores associations with the heart-disease
 target, and builds an introductory logistic-regression classifier.
 
-> **Important:** This is an educational analysis of a public dataset,
-> not a clinical study or diagnostic tool. The results describe patterns
-> in the available records and do not establish causation or support
-> medical decisions.
-
 ## Project Overview
 
 The project brief frames the work as an analysis for **HealthPulse
