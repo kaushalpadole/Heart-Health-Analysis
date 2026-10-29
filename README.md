@@ -158,6 +158,24 @@ flagged in more than one column.
 7.  **Survival analysis unavailable:** The dataset lacks survival
     outcomes and follow-up duration.
 
+## Challenges Faced
+
+## 6. Challenges Faced
+
+1. **Handling Duplicate Records:** The original dataset contained 1,025 rows, including 723 duplicate rows. Removing duplicates reduced the dataset to 302 rows. Since patient IDs were unavailable, it was difficult to determine whether identical records represented the same individuals.
+
+2. **Identifying Data Quality Issues:** The `ca` column contained values of 4, although the expected range was 0–3. Similarly, the `thal` column contained values of 0, although the project brief specified categories 1–3. These anomalies required investigation and documentation.
+
+3. **Interpreting Categorical Variables:** Variables such as chest pain type (`cp`), thalassemia (`thal`), and slope (`slope`) were numerically encoded. Interpreting their correlations and average values required caution because numeric codes do not necessarily represent continuous measurements.
+
+4. **Comparing Unequal Group Sizes:** Stacked bar charts displayed different numbers of records across categories. Comparing raw counts alone could be misleading because the groups had different sample sizes. Within-group percentages would provide a more meaningful comparison.
+
+5. **Analyzing Outliers:** The IQR method identified potential outliers in resting blood pressure, cholesterol, maximum heart rate, and `oldpeak`. These observations were retained because extreme values are not necessarily data-entry errors.
+
+6. **Evaluating the Logistic Regression Model:** The model achieved 80.33% accuracy on a test set of 61 records. However, the small test set and use of a single train-test split limited the reliability of the performance estimate. The model also produced five false negatives and seven false positives.
+
+7. **Limitations of Survival Analysis:** The project brief asked for survival-rate analysis across thalassemia categories, but the dataset did not contain survival outcomes or follow-up duration. Therefore, actual survival rates could not be calculated.
+
 ## Recommendations for Further Analysis
 
 -   Verify the source and intended meaning of anomalous `ca` and `thal`
