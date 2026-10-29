@@ -113,6 +113,27 @@ depend on this preprocessing choice.
 These are IQR flags, not proof of data errors. The same row can be
 flagged in more than one column.
 
+## Overall Findings
+
+-   The cleaned data contains 302 rows after removing 723 duplicate rows
+    from the original 1,025.
+-   Mean age was 54.42 years, mean resting blood pressure was 131.60 mm
+    Hg, and mean cholesterol was 246.50 mg/dl.
+-   Age and cholesterol had a weak positive correlation (**0.207**).
+-   The Welch's t-test did not find a statistically significant
+    difference in mean resting blood pressure by sex (**p = 0.3443**).
+-   Among the examined combinations in heart-disease records, `cp = 2`,
+    `fbs = 0`, `exang = 0`, and `thal = 2` was most frequent (**41
+    records**).
+-   The strongest absolute correlation with the target was `exang`
+    (**−0.436**); the strongest positive correlation was `cp`
+    (**+0.432**).
+-   The baseline logistic-regression model achieved **80.33% test
+    accuracy**, with five false negatives on the test split.
+-   The dataset cannot support a survival-rate analysis because survival
+    and follow-up variables are absent.
+
+
 
 ## Limitations and Responsible Interpretation
 
