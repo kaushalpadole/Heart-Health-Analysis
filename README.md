@@ -193,10 +193,6 @@ flagged in more than one column.
 
 
 ```
-
-The dataset is hosted on Kaggle. If you include a local dataset copy in
-the repository, confirm its license and distribution terms first.
-
 ```
 
 ## Conclusion
